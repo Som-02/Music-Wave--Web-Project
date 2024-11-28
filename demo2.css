@@ -1,0 +1,63 @@
+body{
+    background-color:#11253c;
+    color: whitesmoke;
+    background-image: url(\image.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-blend-mode:soft-light;
+    overflow: auto;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.show{
+  position: absolute;
+  margin-top:220px;
+  margin-left: 1250px;
+}
+.content-section .popular{
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.content-section .popular a{
+  color: white;
+  text-shadow: 1px 1px 20px white;
+  text-decoration: none;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  gap : 25px;
+  padding-right:1%;
+}
+
+.image-container img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: flex;
+  gap: 45px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 30px rgb(180, 181, 181) ;
+}
+
+.play-icon {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  top: 74%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-color: rgb(0, 255, 166);
+  padding: 10px;
+  border-radius: 80%;
+}
+
+.image-container:hover .play-icon {
+  display: block;
+  cursor: pointer;
+}
